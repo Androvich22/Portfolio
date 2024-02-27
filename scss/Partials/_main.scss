@@ -1,0 +1,138 @@
+#landingcover{
+    padding: 0;
+    width: 100%;
+    height: 70vh;
+    h1{
+        font-size: 1.95rem;
+        text-align: center;
+        color: $textcolor;
+     
+    }
+    @include FlexEvenly();
+    #coverimg{
+        height: 50%;
+        width: 24%;
+        background-image: url(../../img/bg4-removebg.png);
+        background-size: cover;
+        border-radius: 0.35rem;
+    }
+}
+.SubTitle{
+    text-align: center;
+    font-size: 2.8rem;
+}
+#about-me{
+    width: 100%;
+    height: 55vh;
+    padding-bottom: 5%;
+}
+.flex-wrap{
+    width: 100%;
+    height: 100%;
+    position:relative;
+    @include FlexEvenly(center);
+    flex-wrap: wrap;
+    .amcontainers{
+        width: 30%;
+        height: 100%;
+        @include FlexEvenly(center,wrap,flex-start);
+        
+        .amhr{
+            background: $nearaccentscolor;
+            width: 100%;
+            height: 1.5%;
+            border: none;
+        }
+
+        .amtext{
+            font-size: 1.35rem;
+            text-align: justify;
+        }
+
+        #d1{
+            position:absolute;
+            width: 300px;
+            height: 300px;
+            border:0.15rem solid #000;
+            transform:rotate(45deg);
+            z-index: 2;
+            background:$nearaccentscolor;
+
+            #d2{
+                position:absolute;
+                background-image: url(../../img/ampic.jpg);
+                background-size: cover;
+                border:0.15rem solid #000;
+                width: 100%;
+                height: 100%;
+                transform:rotate(-45deg);
+                z-index: 1;
+            }
+        }
+    }
+    
+} 
+#Services{
+    width: 100%;
+    height: 40vh;
+    padding-bottom:6%;
+    .flex-wrap{
+        width: 100%;
+        @include FlexEvenly(space-evenly,wrap);
+        .servcontainer{
+            @include FlexEvenly(space-evenly);
+            flex-direction: column;
+            width: 20%;
+            height: 60%;    
+            background: $nearaccentscolor;
+            color: #fff;
+            border-radius: 0.25rem;
+            box-shadow:5px 5px 3px #178be2;
+            
+            i{
+                font-size:3rem;
+                color:$accentscolor
+                
+            }
+            h3{
+                text-align: center;
+                font-size:1.5rem
+                
+            }
+        }
+    }
+    
+}
+
+#projects{
+    width: 100%;
+    height: 120vh;
+    .flex-wrap{
+        .pcontainer{
+            width: 70%;
+            height: 45%;
+            background: #000;
+            border-radius: 0.25rem;
+            box-shadow:5px 5px 3px #178be2;
+            .pimg{
+                width: 80%;
+                height: 100%;
+                float:left;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: fill;
+                }
+            }
+            .ptext{
+                @include FlexEvenly(center, wrap,center); 
+                float:left;
+                width: 20%;
+                height: 100%;
+                background:$nearaccentscolor;
+                color:#fff;
+                
+            }
+        }
+    }
+}

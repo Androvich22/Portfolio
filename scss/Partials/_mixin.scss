@@ -1,0 +1,7 @@
+@mixin FlexEvenly($customjc:space-evenly, $customfw:nowrap, $customac:normal){
+    display:flex;
+    align-items: center;
+    justify-content: $customjc;
+    flex-wrap:$customfw;
+    align-content: $customac;
+}

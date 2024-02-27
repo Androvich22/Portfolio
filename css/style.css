@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300&display=swap");
+header {
+  width: 100%;
+  height: 6vh;
+  background: #101314;
+}
+header nav {
+  width: 100%;
+  height: 6vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-content: normal;
+}
+header nav .logo {
+  background-image: url(../../img/logo.png);
+  background-size: cover;
+  width: 50px;
+  height: 50px;
+}
+header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: normal;
+  gap: 40px;
+}
+header nav ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+header nav ul li a {
+  font-size: 1.3rem;
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+#landingcover {
+  padding: 0;
+  width: 100%;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-content: normal;
+}
+#landingcover h1 {
+  font-size: 1.95rem;
+  text-align: center;
+  color: #000;
+}
+#landingcover #coverimg {
+  height: 50%;
+  width: 24%;
+  background-image: url(../../img/bg4-removebg.png);
+  background-size: cover;
+  border-radius: 0.35rem;
+}
+
+.SubTitle {
+  text-align: center;
+  font-size: 2.8rem;
+}
+
+#about-me {
+  width: 100%;
+  height: 55vh;
+  padding-bottom: 5%;
+}
+
+.flex-wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-content: normal;
+  flex-wrap: wrap;
+}
+.flex-wrap .amcontainers {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: flex-start;
+}
+.flex-wrap .amcontainers .amhr {
+  background: #031633;
+  width: 100%;
+  height: 1.5%;
+  border: none;
+}
+.flex-wrap .amcontainers .amtext {
+  font-size: 1.35rem;
+  text-align: justify;
+}
+.flex-wrap .amcontainers #d1 {
+  position: absolute;
+  width: 300px;
+  height: 300px;
+  border: 0.15rem solid #000;
+  transform: rotate(45deg);
+  z-index: 2;
+  background: #031633;
+}
+.flex-wrap .amcontainers #d1 #d2 {
+  position: absolute;
+  background-image: url(../../img/ampic.jpg);
+  background-size: cover;
+  border: 0.15rem solid #000;
+  width: 100%;
+  height: 100%;
+  transform: rotate(-45deg);
+  z-index: 1;
+}
+
+#Services {
+  width: 100%;
+  height: 40vh;
+  padding-bottom: 6%;
+}
+#Services .flex-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: normal;
+}
+#Services .flex-wrap .servcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-content: normal;
+  flex-direction: column;
+  width: 20%;
+  height: 60%;
+  background: #031633;
+  color: #fff;
+  border-radius: 0.25rem;
+  box-shadow: 5px 5px 3px #178be2;
+}
+#Services .flex-wrap .servcontainer i {
+  font-size: 3rem;
+  color: #178be2;
+}
+#Services .flex-wrap .servcontainer h3 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+#projects {
+  width: 100%;
+  height: 120vh;
+}
+#projects .flex-wrap .pcontainer {
+  width: 70%;
+  height: 45%;
+  background: #000;
+  border-radius: 0.25rem;
+  box-shadow: 5px 5px 3px #178be2;
+}
+#projects .flex-wrap .pcontainer .pimg {
+  width: 80%;
+  height: 100%;
+  float: left;
+}
+#projects .flex-wrap .pcontainer .pimg img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+#projects .flex-wrap .pcontainer .ptext {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-content: center;
+  float: left;
+  width: 20%;
+  height: 100%;
+  background: #031633;
+  color: #fff;
+}
+
+html {
+  scroll-behavior: smooth;
+  margin: 0px;
+  padding: 0px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Outfit", sans-serif;
+}
+
+body {
+  background: rgba(236, 236, 236, 0.75);
+  width: 100%;
+  overflow-x: hidden;
+}
