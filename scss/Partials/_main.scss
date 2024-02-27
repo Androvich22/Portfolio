@@ -12,7 +12,7 @@
     #coverimg{
         height: 50%;
         width: 24%;
-        background-image: url(../img/bg4-removebg.png);
+        background-image: url("../img/bg4-removebg.png");
         background-size: cover;
         border-radius: 0.35rem;
     }
@@ -107,14 +107,18 @@
 #projects{
     width: 100%;
     height: 120vh;
+    padding-bottom: 6%;
     .flex-wrap{
+        
         .pcontainer{
+            
             width: 70%;
             height: 45%;
             background: #000;
-            border-radius: 0.25rem;
+            border-radius: 0.65rem;
             box-shadow:5px 5px 3px #178be2;
             .pimg{
+                
                 width: 80%;
                 height: 100%;
                 float:left;
@@ -125,6 +129,7 @@
                 }
             }
             .ptext{
+                border-radius: 0.65rem;
                 @include FlexEvenly(center, wrap,center); 
                 float:left;
                 width: 20%;
@@ -135,4 +140,57 @@
             }
         }
     }
+}
+
+#contact{
+    width: 100%;
+    height: 60vh;
+    .flex-wrap{
+        
+        form{
+            @include FlexEvenly();
+            flex-direction: column;
+            border-radius: 0.65rem;
+            width: 60%;
+            height: 90%;
+            background:$nearaccentscolor;
+            .f-row{
+                input{
+                    text-align: center;
+                    padding: 13px 160px;
+                    margin: 10px;
+                    
+                }
+                textarea{
+                    margin-top: 20px;
+                    text-align: center;
+                    padding: 40px 175px;
+                }
+                input, textarea{
+                    background:transparent;
+                    border-radius: 0.25rem;
+                    border: 0.2rem solid #073a88;
+                }
+                button{
+                    padding:10px 25px;
+                    border: 2px solid $accentscolor;
+                    border-radius: 0.85rem;
+                    transition: 0.4s;
+                    
+                }
+                input,textarea,button{
+                    &:hover{
+                        transition: 0.5s;
+                        background: $accentscolor;
+                    }
+                    &::placeholder{
+                        color:white;
+                    }
+                }
+            }
+       }
+    }
+}
+main{
+    padding-bottom: 4%;
 }

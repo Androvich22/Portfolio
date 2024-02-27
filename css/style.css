@@ -160,12 +160,13 @@ header nav ul li a {
 #projects {
   width: 100%;
   height: 120vh;
+  padding-bottom: 6%;
 }
 #projects .flex-wrap .pcontainer {
   width: 70%;
   height: 45%;
   background: #000;
-  border-radius: 0.25rem;
+  border-radius: 0.65rem;
   box-shadow: 5px 5px 3px #178be2;
 }
 #projects .flex-wrap .pcontainer .pimg {
@@ -180,6 +181,7 @@ header nav ul li a {
      object-fit: fill;
 }
 #projects .flex-wrap .pcontainer .ptext {
+  border-radius: 0.65rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,6 +192,81 @@ header nav ul li a {
   height: 100%;
   background: #031633;
   color: #fff;
+}
+
+#contact {
+  width: 100%;
+  height: 60vh;
+}
+#contact .flex-wrap form {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-content: normal;
+  flex-direction: column;
+  border-radius: 0.65rem;
+  width: 60%;
+  height: 90%;
+  background: #031633;
+}
+#contact .flex-wrap form .f-row input {
+  text-align: center;
+  padding: 13px 160px;
+  margin: 10px;
+}
+#contact .flex-wrap form .f-row textarea {
+  margin-top: 20px;
+  text-align: center;
+  padding: 40px 175px;
+}
+#contact .flex-wrap form .f-row input, #contact .flex-wrap form .f-row textarea {
+  background: transparent;
+  border-radius: 0.25rem;
+  border: 0.2rem solid #073a88;
+}
+#contact .flex-wrap form .f-row button {
+  padding: 10px 25px;
+  border: 2px solid #178be2;
+  border-radius: 0.85rem;
+  transition: 0.4s;
+}
+#contact .flex-wrap form .f-row input:hover, #contact .flex-wrap form .f-row textarea:hover, #contact .flex-wrap form .f-row button:hover {
+  transition: 0.5s;
+  background: #178be2;
+}
+#contact .flex-wrap form .f-row input::-moz-placeholder, #contact .flex-wrap form .f-row textarea::-moz-placeholder, #contact .flex-wrap form .f-row button::-moz-placeholder {
+  color: white;
+}
+#contact .flex-wrap form .f-row input::placeholder, #contact .flex-wrap form .f-row textarea::placeholder, #contact .flex-wrap form .f-row button::placeholder {
+  color: white;
+}
+
+main {
+  padding-bottom: 4%;
+}
+
+footer {
+  width: 100%;
+  background-color: #101314;
+  color: #fff;
+  height: 7vh;
+}
+footer .flex-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: normal;
+}
+footer .flex-wrap .fcontainer i {
+  margin: 0 13px;
+  color: #178be2;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+footer .flex-wrap .fcontainer i:hover {
+  transform: translateY(-20%);
 }
 
 html {
