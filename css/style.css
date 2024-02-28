@@ -16,8 +16,8 @@ header nav {
 header nav .logo {
   background-image: url("../img/logo.png");
   background-size: cover;
-  width: 50px;
-  height: 50px;
+  width: 90px;
+  height: 90px;
 }
 header nav ul {
   display: flex;
@@ -54,9 +54,11 @@ header nav ul li a {
 }
 #landingcover #coverimg {
   height: 50%;
-  width: 24%;
+  width: 25%;
   background-image: url("../img/bg4-removebg.png");
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
   border-radius: 0.35rem;
 }
 
@@ -103,8 +105,8 @@ header nav ul li a {
 }
 .flex-wrap .amcontainers #d1 {
   position: absolute;
-  width: 300px;
-  height: 300px;
+  width: 35vh;
+  height: 35vh;
   border: 0.15rem solid #000;
   transform: rotate(45deg);
   z-index: 2;
@@ -147,6 +149,7 @@ header nav ul li a {
   color: #fff;
   border-radius: 0.25rem;
   box-shadow: 5px 5px 3px #178be2;
+  transition: 0.5s;
 }
 #Services .flex-wrap .servcontainer i {
   font-size: 3rem;
@@ -156,27 +159,35 @@ header nav ul li a {
   text-align: center;
   font-size: 1.5rem;
 }
+#Services .flex-wrap .servcontainer:hover {
+  transform: translateY(-25%) translateX(5%);
+}
 
 #projects {
   width: 100%;
-  height: 120vh;
-  padding-bottom: 6%;
+  height: 150vh;
+  padding-bottom: 4%;
+}
+#projects .flex-wrap {
+  height: 95%;
 }
 #projects .flex-wrap .pcontainer {
   width: 70%;
-  height: 45%;
-  background: #000;
+  background: #031633;
   border-radius: 0.65rem;
   box-shadow: 5px 5px 3px #178be2;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-content: normal;
 }
 #projects .flex-wrap .pcontainer .pimg {
   width: 80%;
-  height: 100%;
   float: left;
 }
 #projects .flex-wrap .pcontainer .pimg img {
   width: 100%;
-  height: 100%;
   -o-object-fit: fill;
      object-fit: fill;
 }
@@ -189,14 +200,22 @@ header nav ul li a {
   align-content: center;
   float: left;
   width: 20%;
-  height: 100%;
   background: #031633;
   color: #fff;
+}
+#projects .flex-wrap .pcontainer .ptext h2 {
+  text-align: center;
+}
+#projects .flex-wrap .pcontainer .ptext h3 {
+  text-align: center;
 }
 
 #contact {
   width: 100%;
-  height: 60vh;
+  height: 75vh;
+}
+#contact .flex-wrap {
+  height: 95%;
 }
 #contact .flex-wrap form {
   display: flex;
@@ -210,6 +229,14 @@ header nav ul li a {
   height: 90%;
   background: #031633;
 }
+#contact .flex-wrap form .f-row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  align-content: normal;
+}
 #contact .flex-wrap form .f-row input {
   text-align: center;
   padding: 13px 160px;
@@ -219,6 +246,7 @@ header nav ul li a {
   margin-top: 20px;
   text-align: center;
   padding: 40px 175px;
+  resize: none;
 }
 #contact .flex-wrap form .f-row input, #contact .flex-wrap form .f-row textarea {
   background: transparent;
@@ -259,16 +287,252 @@ footer .flex-wrap {
   flex-wrap: wrap;
   align-content: normal;
 }
-footer .flex-wrap .fcontainer i {
+footer .flex-wrap .fcontainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-content: normal;
+}
+footer .flex-wrap .fcontainer a {
+  text-align: center;
+}
+footer .flex-wrap .fcontainer a i {
   margin: 0 13px;
   color: #178be2;
   font-size: 1.5rem;
   transition: 0.3s;
 }
-footer .flex-wrap .fcontainer i:hover {
-  transform: translateY(-20%);
+footer .flex-wrap .fcontainer a i:hover {
+  transform: translateY(-25%);
 }
 
+@media screen and (max-width: 1450px) {
+  #about-me .flex-wrap .amcontainers #d1 {
+    width: 200px;
+    height: 200px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #landingcover h1 {
+    font-size: 1.6rem;
+  }
+  #about-me .flex-wrap {
+    justify-content: space-evenly;
+  }
+  #about-me .flex-wrap .amcontainers .amtext {
+    font-size: 1.1rem;
+  }
+  #about-me .flex-wrap .amcontainers #d1 {
+    width: 22vh;
+    height: 22vh;
+  }
+  #Services .flex-wrap .servcontainer i {
+    font-size: 2.8rem;
+  }
+  #Services .flex-wrap .servcontainer h3 {
+    font-size: 1.4rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  #contact .flex-wrap form .f-row input, #contact .flex-wrap form .f-row textarea {
+    padding: 2% 15%;
+    margin: 2%;
+  }
+}
+@media screen and (max-width: 768px) {
+  header {
+    height: 15vh;
+  }
+  header nav {
+    height: 15vh;
+    flex-direction: column;
+  }
+  #about-me .SubTitle {
+    font-size: 2.5rem;
+  }
+  #about-me .flex-wrap {
+    justify-content: space-evenly;
+  }
+  #about-me .flex-wrap .amcontainers .amtext {
+    font-size: 1rem;
+  }
+  #about-me .flex-wrap .amcontainers #d1 {
+    width: 18vh;
+    height: 18vh;
+  }
+  #landingcover h1 {
+    font-size: 1.4rem;
+  }
+  #Services .SubTitle {
+    font-size: 2.5rem;
+  }
+  #Services .flex-wrap .servcontainer i {
+    font-size: 2rem;
+  }
+  #Services .flex-wrap .servcontainer h3 {
+    font-size: 0.9rem;
+  }
+  #projects {
+    height: 100vh;
+  }
+  #projects .SubTitle {
+    font-size: 2.5rem;
+  }
+  #projects .flex-wrap .pcontainer .ptext h2 {
+    font-size: 1rem;
+  }
+  #projects .flex-wrap .pcontainer .ptext h3 {
+    font-size: 0.5rem;
+  }
+  #contact .SubTitle {
+    font-size: 2.5rem;
+  }
+  footer .flex-wrap .fcontainer h3 {
+    font-size: 0.9rem;
+  }
+  footer .flex-wrap .fcontainer a i {
+    font-size: 1.2rem;
+  }
+}
+@media screen and (max-width: 677px) {
+  #about-me .flex-wrap {
+    justify-content: space-evenly;
+  }
+  #about-me .flex-wrap .amcontainers .amtext {
+    font-size: 0.8rem;
+  }
+  #about-me .flex-wrap .amcontainers #d1 {
+    width: 13vh;
+    height: 13vh;
+  }
+}
+@media screen and (max-width: 600px) {
+  footer {
+    height: 13vh;
+  }
+  footer .flex-wrap {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 510px) {
+  header {
+    height: 30vh;
+  }
+  header nav {
+    height: 30vh;
+    flex-direction: column;
+  }
+  header nav ul {
+    flex-direction: column;
+    gap: 5px;
+  }
+  #projects .flex-wrap .pcontainer .ptext h2 {
+    font-size: 0.7rem;
+  }
+  #projects .flex-wrap .pcontainer .ptext h3 {
+    font-size: 0.5rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  #contact .flex-wrap form .f-row input, #contact .flex-wrap form .f-row textarea {
+    padding: 2% 12%;
+    margin: 2%;
+  }
+}
+@media screen and (max-width: 426px) {
+  #landingcover {
+    height: 35vh;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding-bottom: 10%;
+  }
+  #contact .SubTitle {
+    font-size: 2rem;
+  }
+  #contact .flex-wrap form .f-row input, #contact .flex-wrap form .f-row textarea {
+    padding: 1rem 0.4rem;
+    margin: 2%;
+  }
+  #about-me {
+    height: 90vh;
+  }
+  #about-me .SubTitle {
+    font-size: 2rem;
+  }
+  #about-me .flex-wrap {
+    flex-wrap: nowrap;
+    flex-direction: column;
+  }
+  #about-me .flex-wrap .amcontainers {
+    width: 80%;
+  }
+  #about-me .flex-wrap .amcontainers #d1 {
+    width: 18vh;
+    height: 18vh;
+  }
+  #Services .SubTitle {
+    font-size: 2rem;
+  }
+  #Services .flex-wrap .servcontainer {
+    height: 47%;
+  }
+  #Services .flex-wrap .servcontainer i {
+    font-size: 1.4rem;
+  }
+  #Services .flex-wrap .servcontainer h3 {
+    font-size: 0.7rem;
+  }
+  #projects {
+    height: 80vh;
+  }
+  #projects .SubTitle {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 375px) {
+  #Services {
+    height: 170vh;
+  }
+  #Services .flex-wrap {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+  }
+  #Services .flex-wrap .servcontainer {
+    height: 15%;
+    width: 50%;
+  }
+  #Services .flex-wrap .servcontainer i {
+    font-size: 2.8rem;
+  }
+  #Services .flex-wrap .servcontainer h3 {
+    font-size: 1.4rem;
+  }
+  #projects .flex-wrap .pcontainer .ptext h2 {
+    font-size: 0.5rem;
+  }
+  #projects .flex-wrap .pcontainer .ptext h3 {
+    font-size: 0.3rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  #contact .flex-wrap form {
+    width: 100%;
+  }
+  #contact .flex-wrap form .f-row input, #contact .flex-wrap form .f-row textarea {
+    padding: 0.4rem 0.02px;
+    margin: 1%;
+  }
+}
+@media screen and (max-width: 280px) {
+  #Services .flex-wrap .servcontainer i {
+    font-size: 2.2rem;
+  }
+  #Services .flex-wrap .servcontainer h3 {
+    font-size: 1.2rem;
+  }
+}
 html {
   scroll-behavior: smooth;
   margin: 0px;

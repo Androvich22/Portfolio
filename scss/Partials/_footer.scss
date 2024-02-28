@@ -6,16 +6,20 @@ footer{
     .flex-wrap{
         @include FlexEvenly(space-evenly,wrap);
         .fcontainer{
-            
-            i{
-                margin:0 13px;
-                color:$accentscolor;
-                font-size: 1.5rem;
-                transition: 0.3s;
-                &:hover{
-                    transform: translateY(-20%);
+            @include FlexEvenly(space-evenly,wrap);
+            a{
+                text-align: center;
+                i{
+                    margin:0 13px;
+                    color:$accentscolor;
+                    font-size: 1.5rem;
+                    transition: 0.3s;
+                    &:hover{
+                        transform: translateY(-25%);
+                    }
                 }
             }
+            
         }
     }
 }

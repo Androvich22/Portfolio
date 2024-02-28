@@ -1,0 +1,361 @@
+@media screen and (max-width:1450px) {
+    
+    #about-me{
+        .flex-wrap{
+            .amcontainers{
+                #d1{
+                    width: 200px;
+                    height: 200px;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:1024px){
+    #landingcover h1{
+        font-size: 1.6rem;
+    }
+    
+    #about-me{
+        .flex-wrap{
+            justify-content: space-evenly;
+            .amcontainers{
+    
+                .amtext{
+                    font-size: 1.1rem;
+                }
+                #d1{
+                    width: 22vh;
+                    height: 22vh;
+                }
+            }
+        }
+    }
+    #Services{
+        .flex-wrap{
+            .servcontainer{
+                i{
+                    font-size: 2.8rem;
+                }
+                h3{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:850px){
+    #contact{
+        .flex-wrap{
+            form{
+                .f-row{
+                    input,textarea{
+                        padding: 2% 15%;
+                        margin: 2%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:768px){
+    header{
+        height: 15vh;
+        nav{
+            height: 15vh;
+            flex-direction: column;
+        }
+        
+    }
+
+    #about-me{
+        .SubTitle{
+            font-size: 2.5rem;
+        }
+        .flex-wrap{
+            justify-content: space-evenly;
+            .amcontainers{
+                
+                .amtext{
+                    font-size: 1rem;
+                }
+                #d1{
+                    width:18vh ;
+                    height:18vh ;
+                }
+            }
+        }
+    }
+
+    #landingcover h1{
+        font-size: 1.4rem;
+    }
+
+    #Services{
+        .SubTitle{
+            font-size: 2.5rem;
+        }
+        .flex-wrap{
+            .servcontainer{
+                i{
+                    font-size: 2rem;
+                }
+                h3{
+                    font-size: 0.9rem;
+                }
+            }
+        }
+    }
+
+    #projects{
+        .SubTitle{
+            font-size: 2.5rem;
+        }
+        height: 100vh;
+        .flex-wrap{
+            .pcontainer{
+                .ptext{
+                    h2{
+                        font-size: 1rem;
+                    }
+                    h3{
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+    #contact{
+        .SubTitle{
+            font-size: 2.5rem;
+        }
+    }
+    footer{
+        .flex-wrap{
+            .fcontainer{
+                h3{
+                    font-size: 0.9rem;
+                }
+                a{
+                    i{
+                        font-size: 1.2rem;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:677px){
+    #about-me{
+        .flex-wrap{
+            justify-content: space-evenly;
+            .amcontainers{
+                
+                .amtext{
+                    font-size: 0.8rem;
+                }
+                #d1{
+                    width:13vh ;
+                    height:13vh ;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:600px){
+   footer{
+        height: 13vh;
+        .flex-wrap{
+            flex-direction: column;
+        }
+   }
+}
+
+@media screen and (max-width:510px){
+    header{
+        height: 30vh;
+        nav{
+            height: 30vh;
+            flex-direction: column;
+            ul{
+
+                flex-direction: column;
+                gap:5px;
+            }
+        }
+    }
+
+    #projects{
+        .flex-wrap{
+            .pcontainer{
+                .ptext{
+                    h2{
+                        font-size: 0.7rem;
+                    }
+                    h3{
+                        font-size: 0.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:460px){
+    #contact{
+        .flex-wrap{
+            form{
+                .f-row{
+                    input,textarea{
+                        padding: 2% 12%;
+                        margin: 2%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:426px){
+    #landingcover{
+        height: 35vh;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding-bottom: 10%;
+    }
+    #contact{
+        .SubTitle{
+            font-size: 2rem;
+        }
+        .flex-wrap{
+            form{
+                .f-row{
+                    input,textarea{
+                        padding: 1rem 0.4rem;
+                        margin: 2%;
+                    }
+                }
+            }
+        }
+    }
+
+    #about-me{
+        .SubTitle{
+            font-size: 2rem;
+        }
+        height: 90vh;
+        .flex-wrap{
+            flex-wrap: nowrap;
+            flex-direction: column;
+            .amcontainers{
+                width: 80%;
+                #d1{
+                    width:18vh ;
+                    height:18vh ;
+                }
+            }
+        }
+    }
+
+    #Services{
+        .SubTitle{
+            font-size: 2rem;
+        }
+        .flex-wrap{
+            .servcontainer{
+                height: 47%;
+                i{
+                    font-size: 1.4rem;
+                }
+                h3{
+                    font-size: 0.7rem;
+                }
+            }
+        }
+    }
+
+    #projects{
+        height: 80vh;
+        .SubTitle{
+            font-size: 2rem;
+        }
+    }
+    
+}
+
+@media screen and (max-width:375px){
+    #Services{
+        height: 170vh;
+        .flex-wrap{
+            flex-direction: column;
+            flex-wrap: nowrap;
+            justify-content: space-evenly;
+            .servcontainer{
+                height: 15%;
+                width: 50%;
+                i{
+                    font-size: 2.8rem;
+                }
+                h3{
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+
+    #projects{
+        .flex-wrap{
+            .pcontainer{
+                .ptext{
+                    h2{
+                        font-size: 0.5rem;
+                    }
+                    h3{
+                        font-size: 0.3rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:320px){
+    #contact{
+        .flex-wrap{
+            form{
+                width: 100%;
+                .f-row{
+                    input,textarea{
+                        padding: 0.4rem 0.02px;
+                        margin: 1%;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+@media screen and (max-width:280px){
+    #Services{
+        .flex-wrap{
+            .servcontainer{
+                i{
+                    font-size: 2.2rem;
+                }
+                h3{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    
+}
