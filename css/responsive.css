@@ -25,7 +25,7 @@
     font-size: 1.4rem;
   }
 }
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 855px) {
   #contact .flex-wrap form .f-row input, #contact .flex-wrap form .f-row textarea {
     padding: 2% 15%;
     margin: 2%;
@@ -207,12 +207,21 @@
     font-size: 0.3rem;
   }
 }
+@media screen and (max-width: 350px) {
+  #contact .flex-wrap form {
+    width: 100%;
+  }
+  #contact .flex-wrap form .f-row input, #contact .flex-wrap form .f-row textarea {
+    padding: 0.4rem 0.01px;
+    margin: 1%;
+  }
+}
 @media screen and (max-width: 320px) {
   #contact .flex-wrap form {
     width: 100%;
   }
   #contact .flex-wrap form .f-row input, #contact .flex-wrap form .f-row textarea {
-    padding: 0.4rem 0.02px;
+    padding: 0.3rem 0.02px;
     margin: 1%;
   }
 }

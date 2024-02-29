@@ -48,7 +48,7 @@
     
 }
 
-@media screen and (max-width:850px){
+@media screen and (max-width:855px){
     #contact{
         .flex-wrap{
             form{
@@ -327,6 +327,23 @@
     }
 }
 
+@media screen and (max-width:350px){
+    #contact{
+        .flex-wrap{
+            form{
+                width: 100%;
+                .f-row{
+                    input,textarea{
+                        padding: 0.4rem 0.01px;
+                        margin: 1%;
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
 @media screen and (max-width:320px){
     #contact{
         .flex-wrap{
@@ -334,7 +351,7 @@
                 width: 100%;
                 .f-row{
                     input,textarea{
-                        padding: 0.4rem 0.02px;
+                        padding: 0.3rem 0.02px;
                         margin: 1%;
                     }
                 }
